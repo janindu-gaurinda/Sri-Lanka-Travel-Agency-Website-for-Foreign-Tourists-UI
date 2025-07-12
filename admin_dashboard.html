@@ -1,0 +1,446 @@
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Admin Dashboard</title>
+    <!-- 88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS (no CDN) -->
+    <link rel="stylesheet" href="./Travel Sri Lanka_files/Articles-Cards-images.css">
+    <link rel="stylesheet" href="./Travel Sri Lanka_files/Navbar-Centered-Links-icons.css">
+    <!-- GLightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <!-- Custom CSS (no CDN) -->
+    <link rel="stylesheet" href="./Travel Sri Lanka_files/coustom.css">
+    <!-- DataTables Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <!-- Custom CSS (no CDN) -->
+    <link rel="stylesheet" href="./Travel Sri Lanka_files/star_rating.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.7.0/css/flag-icons.min.css">
+    <!-- Tom Select -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css">
+    <!-- Parsley CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/parsleyjs/src/parsley.css">
+    <!-- 88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+    <style>
+        #feedbackChart {
+            width: 100% !important;
+            height: 100% !important;
+        }
+        #activeUsersChart {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div class="z-3 col-md-6 position-absolute pt-5 rounded-3" style="left: 50%; transform: translateX(-50%);">
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm border-bottom">
+                <div class="container-fluid">
+                    <!-- Brand Logo -->
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
+                        <img src="./admin_dashboard_files/Vintage and Retro Holiday Travel Agent Logo.png" alt="Logo"
+                            width="40" height="40" class="rounded-circle">
+                        <span class="fw-bold text-white d-none d-md-inline">Travel SL</span>
+                    </a>
+
+                    <!-- Toggler -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Nav Links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold">
+                            <!-- <li class="nav-item">
+                    <a class="nav-link" href="index.php?controller=Home&action=index">Home</a>
+                </li> -->
+                            <!-- ========================================== -->
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold text-danger" href="./admin_dashboard.html">Admin
+                                    Dashboard</a>
+                            </li>
+                            <!-- ========================================== -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="./package.html"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Packages
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="./package.html">Packages</a>
+                                    </li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item"
+                                            href="./addpakge.html">Add
+                                            Packages</a></li>
+                                </ul>
+                            </li>
+                            <!-- ========================================== -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="./destinations.html"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Destinations
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="./destinations.html">Destinations</a>
+                                    </li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item"
+                                            href="./adddestinatin.html">Edit
+                                            Destinations</a></li>
+                                </ul>
+                            </li>
+                            <!-- ========================================== -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="./feedback.html"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Feedback
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="./feedback.html">Feedback</a>
+                                    </li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item"
+                                            href="./curd_feedback.html">CURD
+                                            Feedback</a></li>
+                                </ul>
+                            </li>
+                            <!-- ========================================== -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="./Travel_tip.html"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Travel Tips
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="./Travel_tip.html">Travel
+                                            Tips</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item"
+                                            href="./curd_feedback.html">CRUD
+                                            Travel Tips</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item"
+                                            href="./pending_t_tip.html">User
+                                            Pending Blogs</a></li>
+                                </ul>
+                            </li>
+                            <!-- ========================================== -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="./gallary.html"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gallery
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="./gallary.html">Gallery</a>
+                                    </li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item"
+                                            href="./gallary.html">Add
+                                            Gallery Img</a></li>
+                                </ul>
+                            </li>
+                            <!-- ========================================== -->
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="http://localhost/1janindu%20gaurinda/SL%20travel/New%20folder/Sl/index.php?controller=dashboard&amp;action=index#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    User
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item"
+                                            href="http://localhost/1janindu%20gaurinda/SL%20travel/New%20folder/Sl/index.php?controller=Home&amp;action=index">User</a>
+                                    </li>
+                                    <hr class="dropdown-divider">
+                                </ul>
+                            </li> -->
+
+                            <!-- ========================================== -->
+
+
+                        </ul>
+
+                        <div class="d-flex align-items-center gap-2 gap-lg-3">
+                            <a href="./user_dashboard.html" class="d-flex align-items-center text-decoration-none">
+                                <img src="./admin_dashboard_files/6864c9fc83a8d_Vintage and Retro Holiday Travel Agent Logo.png"
+                                    alt="User" width="40" height="40"
+                                    class="rounded-circle shadow-sm border border-2 border-primary me-2">
+                                <span class="fw-semibold text-white d-none d-lg-inline">Hi, SL Travel</span>
+                            </a>
+                            <form action="./login.html" method="POST" class="m-0"
+                                onsubmit="return confirm('Are you sure you want to logout?')">
+                                <button class="btn btn-outline-danger btn-sm" type="submit">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <br> <!-- Main content -->
+            <!-- <div class="col offset-1"> -->
+            <div class="col">
+                <div class="container py-4">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
+                        <h1 class="h3 fw-bold ">Dashboard</h1>
+                    </div>
+
+                    <!-- Filter Section -->
+                    <form id="filterForm" class="row g-2 align-items-end bg-light p-3 rounded shadow-sm mb-4">
+                        <div class="col-md-3">
+                            <label class="form-label">From</label>
+                            <input type="date" class="form-control form-control-sm" name="date_from">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">To</label>
+                            <input type="date" class="form-control form-control-sm" name="date_to">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Status</label>
+                            <select class="form-select form-select-sm" name="status">
+                                <option value="">All Status</option>
+                                <option value="active">Active</option>
+                                <option value="pending">Pending</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 d-flex gap-2">
+                            <button type="submit" class="btn btn-primary btn-sm w-100">Filter</button>
+                            <button type="button" class="btn btn-outline-secondary btn-sm w-100"
+                                onclick="document.getElementById(filterForm).reset()">Reset</button>
+                        </div>
+                    </form>
+                    <!-- Summary Cards -->
+                    <div class="row g-4">
+                        <div class="col-12 col-md-3">
+                            <div class="card text-center shadow-sm border-0">
+                                <div class="card-body">
+                                    <h5 class="fw-bold text-success">Total Users</h5>
+                                    <p class="display-6 fw-bold" id="totalUsers">1,250</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="card text-center shadow-sm border-0">
+                                <div class="card-body">
+                                    <h5 class="fw-bold text-primary">Feedback</h5>
+                                    <p class="display-6 fw-bold" id="feedbackCount">340</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="card text-center shadow-sm border-0">
+                                <div class="card-body">
+                                    <h5 class="fw-bold text-warning">Pending Approvals</h5>
+                                    <p class="display-6 fw-bold" id="pendingApprovals">27</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="card text-center shadow-sm border-0">
+                                <div class="card-body">
+                                    <h5 class="fw-bold text-info">Total Bookings</h5>
+                                    <p class="display-6 fw-bold" id="totalBookings">1,030</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Chart Section -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-12 col-lg-4">
+                            <div class="card shadow border-0 h-100">
+                                <div class="card-header bg-primary text-white d-flex align-items-center">
+                                    <i class="bi bi-bar-chart-fill me-2"></i> Feedback Overview
+                                </div>
+                                <div class="card-body bg-light" style="height: 300px; position: relative;">
+                                    <canvas id="feedbackChart"
+                                        style="height: 268px; display: block; box-sizing: border-box; width: 324px;"
+                                        width="324" height="268"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card shadow border-0 h-100">
+                                <div class="card-header bg-success text-white d-flex align-items-center">
+                                    <i class="bi bi-graph-up-arrow me-2"></i> Active Users
+                                </div>
+                                <div class="card-body bg-light" style="height: 300px; position: relative;">
+                                    <canvas id="activeUsersChart"
+                                        style="height: 268px; display: block; box-sizing: border-box; width: 324px;"
+                                        width="324" height="268"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card shadow border-0 h-100">
+                                <div class="card-header bg-warning text-white d-flex align-items-center">
+                                    <i class="bi bi-pie-chart-fill me-2"></i> Status Distribution
+                                </div>
+                                <div class="card-body bg-light">
+                                    <canvas id="statusDistributionChart"
+                                        style="height: 324px; display: block; box-sizing: border-box; width: 324px;"
+                                        width="324" height="324"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monthly Booking Chart -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-12">
+                            <div class="card shadow border-0">
+                                <div class="card-header bg-info text-white d-flex align-items-center">
+                                    <i class="bi bi-calendar-check-fill me-2"></i> Bookings (Last 12 Months)
+                                </div>
+                                <div class="card-body bg-light">
+                                    <canvas id="bookingsChart"
+                                        style="height: 542px; display: block; box-sizing: border-box; width: 1084px;"
+                                        width="1084" height="542"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Chart.js scripts (example) -->
+                <script src="./admin_dashboard_files/chart.js.download"></script>
+                <script>
+                    // Example chart data
+                    const bookingsData = {
+                        labels: ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                        datasets: [{
+                            label: 'Bookings',
+                            backgroundColor: '#0dcaf0',
+                            borderColor: '#0dcaf0',
+                            data: [90, 80, 120, 150, 180, 160, 140, 170, 200, 190, 220, 210],
+                        }]
+                    };
+
+                    new Chart(document.getElementById('bookingsChart'), {
+                        type: 'line',
+                        data: bookingsData,
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: {
+                                    display: false
+                                }
+                            }
+                        }
+                    });
+
+                    // Add your other charts here similarly
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./admin_dashboard_files/chart.js.download"></script>
+    <script src="./admin_dashboard_files/countUp.umd.js.download"></script>
+
+    <script>
+        // Example data — replace with your dynamic data
+        new Chart(document.getElementById('feedbackChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Positive', 'Neutral', 'Negative'],
+                datasets: [{
+                    data: [100, 40, 15],
+                    backgroundColor: ['#198754', '#ffc107', '#dc3545']
+                }]
+            }
+        });
+
+        new Chart(document.getElementById('activeUsersChart'), {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+                datasets: [{
+                    label: 'Users',
+                    data: [50, 75, 110, 90],
+                    borderColor: '#0d6efd',
+                    backgroundColor: 'rgba(13, 110, 253, 0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            }
+        });
+
+        new Chart(document.getElementById('statusDistributionChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Active', 'Pending', 'Inactive'],
+                datasets: [{
+                    data: [120, 50, 30],
+                    backgroundColor: ['#198754', '#ffc107', '#6c757d']
+                }]
+            }
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const options = { duration: 2 };
+
+            new countUp.CountUp('totalUsers', 1250, options).start();
+            new countUp.CountUp('feedbackCount', 340, options).start();
+            new countUp.CountUp('pendingApprovals', 27, options).start();
+            new countUp.CountUp('totalBookings', 1030, options).start();
+        });
+    </script>
+    <!-- 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- DataTables core -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- DataTables Bootstrap 5 integration -->
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom init script (local) -->
+    <script src="./Travel Sri Lanka_files/bs-init.js.download"></script>
+    <!-- GLightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- Parsley JS -->
+    <script src="https://cdn.jsdelivr.net/npm/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Tom Select -->
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+    <!-- Custom JS (local) -->
+    <script src="./Travel Sri Lanka_files/coustom.js.download"></script>
+    <!-- 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+</body>
+
+</html>
